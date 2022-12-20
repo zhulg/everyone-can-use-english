@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>后记 - EnglishBook</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter1.html"><strong aria-hidden="true">1.</strong> 第一章：起点</a></li><li class="chapter-item expanded "><a href="chapter2.html"><strong aria-hidden="true">2.</strong> 第二章：口语</a></li><li class="chapter-item expanded "><a href="chapter3.html"><strong aria-hidden="true">3.</strong> 第三章：语音</a></li><li class="chapter-item expanded "><a href="chapter4.html"><strong aria-hidden="true">4.</strong> 第四章：朗读</a></li><li class="chapter-item expanded "><a href="chapter5.html"><strong aria-hidden="true">5.</strong> 第五章：词典</a></li><li class="chapter-item expanded "><a href="chapter6.html"><strong aria-hidden="true">6.</strong> 第六章：语法</a></li><li class="chapter-item expanded "><a href="chapter7.html"><strong aria-hidden="true">7.</strong> 第七章：精读</a></li><li class="chapter-item expanded "><a href="chapter8.html"><strong aria-hidden="true">8.</strong> 第八章：叮嘱</a></li><li class="chapter-item expanded "><a href="end.html" class="active"><strong aria-hidden="true">9.</strong> 后记</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">EnglishBook</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="后记"><a class="header" href="#后记">后记</a></h1>
+<p>这本书几经易稿，终于快要完成之时，我收到一封读者林山（@bojia）的来信。于我来说，无异于上天赐给我的礼物。以下，是她来信的全文：</p>
+<hr />
+我一个退役运动员。
+<p>08 年开始看笑来老师的博客，两年时间里，我从几乎是零基础到 
+获得雅思 6.5 分，留学申请成功──今年 9 月去爱丁堡大学读研究生。身边的人都特别惊讶，问我这个没上过初中高中的人是怎么学习英语的。几天前，我请笑来老师吃饭，当面感谢他的时候，他也很惊讶，也很高兴。告诉我一定要把我学英语的过程，和我的一些感受写下来，供大家参考。所以就有了这篇文章。</p>
+<p>我十岁进入省队，开始我的职业运动员生涯。别的孩子每天背着书包去上学，我和队友们每天 8 小时，一周 6 天，拿着拍子在球场上练球。6 年之后，因为我 自身的条件还有当时队里的环境，像许多运动员一样，我并没有取得太好的成绩。我选择退役，进入大学学习。我清楚地记得，当我做出这个选择的时候，当时我的 教练泼我冷水：“你以为学习就比训练容易吗，我保证你读一个星期就读不下去了。” </p>
+<p>我当时心里也没底，毕竟这么多年没念书，基础差的不是一星半点，直接上大学能跟得上吗。但是比起继续训练，我更愿意换个环境重新开始，所以我报考了一所体育院校。</p>
+<p>相比起运动队，大学简直是天堂，没有早操，没有教练的控制，当然田径场还是有的，不过再也没有人逼着跑长跑了。众所周知，体育类院校真正在学习的人 少之又少，像清华北大那些因为学习压力大而跳楼的人在我们学校是不存在的。人家学校每年都有 “自杀率”，我们学校每年是 “杀他率” 和 “被杀率”。我一边后 悔自己怎么没上个综合性大学，一边放任自己在这个环境里心安理得地享受着混吃等死的安逸日子。直到后来找工作写简历时，我才发现，本科的时光真的过得比我 的成绩单还要更空虚一些。当时真恨不得把三围也写进去，照片贴张 5 寸的，好让简历能凑够一页。</p>
+<p>大四的时候，我跟很多人一样，把出国留学当成最后的救命稻草。报了新东方托福班，笑来老师当时是教写作。说实话，当时上课完全听不懂。现在想想，当 时想去考托福完全是异想天开。我上大学开始学英语，大学里的英语课只有四学期，大学的英语老师也假定你是有一定语法基础的，对我这种零基础的来说无异于天 书，所以当时考试基本靠小抄，成绩一直在及格线附近徘徊。这种程度，在半年之内想托福考到 90，不管上什么补习班，都是不可能的。结果可想而知，59 分的 托福成绩让最后一点希望也破灭了。我当时觉得自己这辈子肯定完了。没有什么文化知识，基础知识，数学、物理、化学、地理、历史统统没学过；唯一的技能只能 从事教练或者老师的工作，就业面非常窄。我怎么和那些从小上学的孩子在社会上竞争呢。哪个公司会要一个四肢发达、头脑简单的退役运动员呢。我开始埋怨父 母，当初为什么要送我去练球；我埋怨学校，为什么不给我提供一个好的学习环境；我埋怨自己，为什么当初不好好珍惜时间，恶补文化课知识。</p>
+<p>那时候在笑来博客里看到一段话：</p>
+<blockquote>
+<p>缺乏耐心几乎是所有人的本性，也是绝大多数人最终未能矫正的习惯。很多人在生活的方方 面面都因为缺乏耐心而处处吃亏却又从不自知；处处吃亏的结果是越来越急于求成，越来越缺乏耐心——于是一生都只能在这个死循环中左冲右撞而后最终混个死因不详。</p>
+</blockquote>
+<p>这简直是我当时状态的最佳写照。我当时觉得我年龄还不大，还有时间再读个研究生，读完研究生以后就业时选择的面就宽多了，所以我想到了去英国读研。 但是留学考试是凭实力的，而我的外语这么差。所以我觉得我要想留学的话，一定要把外语提高上去，而且这次要吸取教训，不能再急功近利了。因此，我又跟父母 商量，要去留学。父母还是心存疑虑的，毕竟有前车之鉴，所以要求我必须先考过雅思再开始申请学校。我跟他们保证说，这次我一定会考过的，而且我要考 7 分， 上一所好的学校。我想以前这么训练这么累都坚持过来了，只要我有耐心坚持下去，一定能做到的。</p>
+<p>我从剑桥中级英语语法开始，坚持做三遍，一来培养耐心，二来恶补语法。配合记录时间的习惯，每天记录下来我学习英语的时间。08 年七月开始，每天 2 个单元，用时大约 90 分钟。第二遍大约 60 分钟做完两个单元，第三遍的时候速度更快了，平均 30 分钟就能做完，另外用 30 分钟把例句读熟。我要求自己，不管再累在忙，每天一定要完成 2 个单元。 中间当然也有间断的时候，我就跟自己说，这是我最后的机会了，如果我放弃了，我又得重头开始了，我不能再重蹈覆辙了。为了给自己洗脑，我把很多笑来文章中 的句子，抄在本子上，每天早上读几遍。08 年 9 月我在新东方学习新概念二册。09 年 3 月初的时候总算把三遍剑桥中级语法，接着报了新概念三。09 年 5 月的 时候新三学完，我报了 6 月的雅思，想先裸考一次，看看自己现在到底什么水平。这中间的一个月时间，一边复习新三，一边用笑来的如何提高阅读速度那几篇文章里的方法读老托福的文章；用老托福 PART-C 的文章做跟读训练。刚开始的时候觉得这些方法实在是太慢了，太麻烦了，直到考前一共才看了 5 篇阅读，跟读练了 2 篇。6 月的雅思考试成绩并不理想，阅读 5.5，听力 6，口语 6.5,写作 5，总分 5.5。我当时的目标是考 7 分，5.5 离目标差得不 是一星半点。</p>
+<p>我当时仔细回忆我当运动员的时候，我当时是怎么训练的，每项技术是怎么打磨的。我发现其实这些都和学英语有共通之处。每个技术动作的要领并不复杂， 教练教会基本动作之后剩下的就是大量的重复。在无数次的重复中，纠正错误动作，模仿优秀运动员的动作并结合自身的特点，最终形成自己的动作。同样，应用到 学习英语中。我已经掌握了基本的语法、基础的词汇和学习方法，那么剩下就是大量应用、练习了。最重要的是，清楚什么是自己能控制的，什么是不能控制的。比赛的时候，天气、场地、观众、对手还有结果这些都是属于不能控制 的事情，唯一能控制的就是自己。我是不是每一个动作都尽力做好了，我是不是按既定的战术执行了，我在累的时候有没有坚持住，这些是我能够控制的。同理，考 试的题目不是我能控制的，结果更不是我能控制的了，那么我还老想着我要考多少分，时刻关注机经模板除了浪费时间和让自己更焦虑之外没有任何用处。</p>
+<p>想明白之后，就该干嘛干嘛了。</p>
+<h3 id="阅读"><a class="header" href="#阅读">阅读</a></h3>
+<ul>
+<li>如何迅速提高阅读能力里的方法精读剑 4-7 的每一篇文章。</li>
+<li>新托福 iBT 词汇分类突破 认真背了 3 遍。</li>
+</ul>
+<h3 id="听力"><a class="header" href="#听力">听力</a></h3>
+<ul>
+<li>托福听说训练 练习了 20 多篇。</li>
+<li>抄写基础词表：GSL 和 AWL，恶补拼 写。</li>
+<li>剑 4-7 里的听力部分做了两遍。</li>
+</ul>
+<h3 id="写作"><a class="header" href="#写作">写作</a></h3>
+<ul>
+<li>TOEFL iBT 高分作文仿写、背诵经典的句子。</li>
+<li>大作文写了不到二十篇，小作文 7 篇。</li>
+<li>慎晓嶷 ‘七天’ 里的小作文每种图表背了个一篇。</li>
+<li>‘如何准备留学考试系列’ 里的有力模式、立场选择等文章打印出来、认真读了 N 遍。</li>
+</ul>
+<h3 id="口语"><a class="header" href="#口语">口语</a></h3>
+<ul>
+<li>第一部分，准备了九十多道真题，一个英语很好的朋友帮我写的。第二部分，准备了十个左右话题。第三部分，背了经典的句型若干。</li>
+<li>对照<a href="http://www.uiowa.edu/~acadtech/phonetics/english/frameset.html">这个网站</a>对着镜子模仿口型和发音。每天半小时，1 个月时间。
+其他</li>
+<li>想明白系列，反复看了若干遍。</li>
+</ul>
+<p>考前没有报任何培训班。10 月的雅思成绩是，听力和阅读都考了 7，口语还是 6.5，写作 5.5，总分 6.5。虽然没考到理想的 7 分，但这个成绩也已 经够申请的标准了。我当时很激动，我证明了自己并不比那些从小一直学习的同学差。我的经历告诉我，首先一个人只要有坚定的信念，只要努力不怕苦，没有办不 成的事。有人总是强调别人的是个例，来宽恕自己的不努力。这个过程有多苦吗，有多难吗，我没觉得。可能这也得感谢我从小受的训练吧，忍耐枯燥的训练和服从 教练的指示。</p>
+<p>其次，自信来自于能力，任何能力都是靠自己努力学习来的，是一个非常明显的从无到有的过程。我从英语零基础到考过雅思，自学能力一点点打磨出 来。这个凭能力产生的从无到有的过程，才是提高我自信的动机。在这个世界上除了你的本领和能力是真正属于你的，没有什么是能够与你共生的。这些才是产生自 信的真正动力。</p>
+<p>最后，希望我的经历能够多多少少给那些真正想学好英语的同学一些帮助。</p>
+<p><a href="https://twitter.com/BoJia"></a>谢谢笑来老师，如果没有你这么无私的分享这些学习方法和人生感悟，我也不可能在这么短的时间内完成我的目标。</p>
+<h2 id="--完--"><a class="header" href="#--完--">--完--</a></h2>
+<p><a href="./README.html"> 目录 </a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter8.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter8.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
